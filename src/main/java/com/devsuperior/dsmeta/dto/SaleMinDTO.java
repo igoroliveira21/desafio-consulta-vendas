@@ -44,4 +44,8 @@ public class SaleMinDTO {
 	public LocalDate getDate() {
 		return date;
 	}
+
+	public String getSellerName() {
+		return sellerName;
+	}
 }
