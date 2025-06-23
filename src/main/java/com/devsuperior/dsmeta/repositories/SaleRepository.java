@@ -14,6 +14,7 @@ import java.util.List;
 
 
 public interface SaleRepository extends JpaRepository<Sale, Long> {
+
         @Query(nativeQuery = true,
                 value = "SELECT tb_sales.id, tb_sales.date, tb_sales.amount, tb_seller.name " +
                         "FROM tb_sales INNER JOIN tb_seller ON tb_sales.seller_id=tb_seller.id " +
